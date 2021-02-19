@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<title>
+		Member
+	</title>
+</head>
+
+<body>
+	<div id="container" class="container">
+		<!-- FORM SECTION -->
+		<div class="row">
+			<!-- SIGN UP -->
+			<div class="col align-items-center flex-col sign-up">
+			</div>
+			<!-- END SIGN UP -->
+			<!-- SIGN IN -->
+			<div class="col align-items-center flex-col sign-in">
+				<div class="form-wrapper align-items-center">
+					<div class="form sign-in">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" placeholder="Tên tài khoản">
+						</div>
+						<div class="input-group wrapper">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Mật khẩu" class="showpass1">
+							<span class="show-btn"><i class="fas fa-eye"></i></span>
+						</div>
+						
+						<button>
+							Đăng nhập
+						</button>
+						<p>
+							<b class="forget_pass" >
+								Quên mất mật khẩu rồi!
+							</b>
+						</p>
+						<p>
+							<span>
+								Không có tài khoản xịn?
+							</span>
+							
+						</p>
+					</div>
+				</div>
+				<div class="form-wrapper">
+					<div class="social-list align-items-center sign-in">
+						<div class="align-items-center facebook-bg">
+							<i class='bx bxl-facebook'></i>
+						</div>
+						<div class="align-items-center google-bg">
+							<i class='bx bxl-google'></i>
+						</div>
+						<div class="align-items-center twitter-bg">
+							<i class='bx bxl-twitter'></i>
+						</div>
+						<div class="align-items-center insta-bg">
+							<i class='bx bxl-instagram-alt'></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END SIGN IN -->
+			
+		</div>
+
+		<!-- END FORM SECTION -->
+		<!-- CONTENT SECTION -->
+		<div class="row content-row">
+			<!-- SIGN IN CONTENT -->
+			<div class="col align-items-center flex-col">
+				<div class="text sign-in">
+					<h2>
+						Chào mừng 
+						<br>
+						thành viên của Asuzac
+					</h2>
+					<p>
+						Chúc mừng bạn đã vào ngôi nhà chung Asuzac. Việc của bạn bây giờ chỉ cần 
+						vào đăng nhập và tìm hiểu mình trong đó nhé! ^^
+					</p>
+				</div>
+				<div class="img sign-in">
+					<img src="assets/18784.svg" alt="welcome">
+				</div>
+			</div>
+			<!-- END SIGN IN CONTENT -->
+			<!-- SIGN UP CONTENT -->
+			<div class="col align-items-center flex-col">
+				<div class="img sign-up">
+					<img src="assets/494642-PHERZW-578.svg" alt="welcome">
+				</div>
+				<div class="text sign-up">
+					<h2>
+						Chuẩn bị bước vào ngôi nhà chung 
+					</h2>
+					<p>
+						Xin chào bạn đến với cổng thông tin của Asuzac. Tại đây bạn có thể
+						biết thông tin lương, thông báo, tình trạng cơm nước của mình...
+					</p>
+				</div>
+			</div>
+			<!-- END SIGN UP CONTENT -->
+		</div>
+		<!-- END CONTENT SECTION -->
+	</div>
+
+	
+	<script>
+		const passField = document.querySelector("input.showpass","nput.showpass1");
+		const showBtn = document.querySelector("span i");
+		showBtn.onclick = (()=>{
+		  if(passField.type === "password"){
+			passField.type = "text";
+			showBtn.classList.add("hide-btn");
+		  }else{
+			passField.type = "password";
+			showBtn.classList.remove("hide-btn");
+		  }
+		});
+	  </script>
+	<script src="index.js"></script>
+</body>
+
+</html>
